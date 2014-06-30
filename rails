@@ -1,5 +1,5 @@
 /var/app/log/*.log {
-    weekly
+    daily
     missingok
     rotate 5
     compress
