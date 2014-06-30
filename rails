@@ -1,0 +1,12 @@
+/var/app/log/*.log {
+    weekly
+    missingok
+    rotate 5
+    compress
+    delaycompress
+    notifempty
+    sharedscripts
+    postrotate
+            touch /var/app/tmp/restart.txt > /dev/null
+    endscript
+}
